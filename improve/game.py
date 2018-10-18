@@ -70,7 +70,10 @@ def print_inventory_items(items):
     <BLANKLINE>
 
     """
-    pass
+
+    if inventory:
+        print("You have", list_of_items(inventory) + ".")
+        print("")
 
 
 def print_room(room):
@@ -376,8 +379,6 @@ def main():
 
         # Execute the player's command
         execute_command(command)
-
-
 
 # Are we being run as a script? If so, run main().
 # '__main__' is the name of the scope in which top-level code executes.
